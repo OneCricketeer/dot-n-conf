@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "/opt/Jupyter/kernels/apache_toree_pyspark_16/bin/run.sh",
+    "--profile",
+    "{connection_file}"
+  ],
+  "env": {
+    "DEFAULT_INTERPRETER": "PySpark",
+    "__TOREE_SPARK_OPTS__": "",
+    "__TOREE_OPTS__": "",
+    "SPARK_HOME": "/usr/local/opt/apache-spark@1.6/libexec",
+    "PYTHONPATH": "/usr/local/opt/apache-spark@1.6/libexec/python:/usr/local/opt/apache-spark16/libexec/python/lib/py4j-0.9-src.zip",
+    "PYTHON_EXEC": "python"
+  },
+  "display_name": "Apache Toree - PySpark (1.6)",
+  "language": "python"
+}
