@@ -49,10 +49,19 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export ZSH_2000_DEFAULT_USER='CHANGE ME'
 export ZSH_2000_DISABLE_RVM='true'
 export ZSH_2000_DISABLE_GIT_STATUS='true'
-# My customizations
+# My theme customizations
 # export ZSH_2000_DISABLE_RIGHT_PROMPT='false'
 export ZSH_2000_DISABLE_TIME='true'
 export ZSH_2000_DISABLE_GIT_TIME='true'
 export ZSH_2000_GIT_PROMPT_RIGHT='true'
 
-if which java > /dev/null; then export JAVA_HOME=$(/usr/libexec/java_home); fi
+# Copied from a CentOS box
+for i in "~/profile.d/*.sh" ; do
+    if [ -r "$i" ]; then
+        if [ "${-#*i}" != "$-" ]; then
+            . "$i"
+        else
+            . "$i" >/dev/null 2>&1
+        fi
+    fi
+done
