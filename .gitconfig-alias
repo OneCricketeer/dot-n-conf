@@ -1,0 +1,33 @@
+	st = status -sb
+	s = status
+	a = add
+	c = commit
+	ci = commit
+	cia = commit --amend
+	co = checkout
+	cp = cherry-pick
+	b = branch
+	br = branch
+	bra = branch -a
+	brc = branch -a --contains
+	brm = branch -a --merged
+	brnm = branch -a --no-merged
+	d = diff --color
+	df = diff
+	df1 = diff HEAD~1
+	fa = fetch --all
+	fp = fetch -p
+	ft = fetch -t
+	pl = pull
+	plo = pull origin
+	ps = push
+	pso = push origin
+	sta = stash
+	log1 = log --pretty=oneline --abbrev-commit --decorate --date=relative --graph
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	lgn = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative -n10
+	lp = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	lt = describe --abbrev=0 --tags
+	tl = tag -l
+	tc = tag --contains
+	mt = mergetool
