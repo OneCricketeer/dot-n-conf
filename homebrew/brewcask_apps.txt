@@ -1,0 +1,4 @@
+intellij-idea-ce
+iterm2
+java8
+visual-studio-code-insiders
