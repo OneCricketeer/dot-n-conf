@@ -24,6 +24,9 @@ zle-line-init() {
 zle -N zle-line-init
 
 bindkey '^T' autosuggest-toggle
+# Fixing home & end keymaps
+bindkey "^[[H" beginning-of-line
+bindkey "^[[F" end-of-line
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
