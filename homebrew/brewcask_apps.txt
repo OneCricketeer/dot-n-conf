@@ -1,4 +1,7 @@
-intellij-idea-ce
 iterm2
-java8
 visual-studio-code-insiders
+asdf
+brave-browser
+intellij-idea-ce
+firefox-developer-edition
+kafka
